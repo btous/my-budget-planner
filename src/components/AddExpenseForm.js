@@ -29,29 +29,31 @@ const AddExpenseForm = () => {
     <form onSubmit={onSubmit}>
       <div className="row d-flex align-items-end">
         <div className="col-sm pl-0">
-          <label for="name">Name</label>
+          <label htmlFor="name">Name</label>
           <input
+            className="form-control"
             required="required"
             type="text"
-            className="form-control"
             id="name"
+            autoComplete="off"
             value={name}
             onChange={(event) => setName(event.target.value)}
           ></input>
         </div>
         <div className="col-sm pl-0">
-          <label for="cost">Cost</label>
+          <label htmlFor="cost">Cost</label>
           <input
             required="required"
             type="text"
             className="form-control"
             id="cost"
+            autoComplete="off"
             value={cost}
             onChange={(event) => setCost(event.target.value)}
           ></input>
         </div>
         <div className="col-sm pl-0">
-          <button type="submit" className="btn btn-primary my-3">
+          <button type="submit" className="btn btn-primary mt-3">
             Save
           </button>
         </div>

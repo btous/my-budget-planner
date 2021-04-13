@@ -25,6 +25,7 @@ const Budget = () => {
         <form className="w-100 d-flex justify-content-between align-items-center" onSubmit={onSave}>
           <input
             type="number"
+            aria-label="budget"
             value={newBudget}
             onChange={(event) => (setNewBudget(event.target.value))}
           ></input>
