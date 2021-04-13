@@ -10,7 +10,7 @@ import { AppProvider } from "./context/AppContext";
 const App = () => {
   return (
     <AppProvider>
-      <div className="container">
+      <div className="container mb-3">
         <h1 className="mt-3"> My Budget Planner </h1>
         <div className="row mt-3">
           <div className="col-sm mb-3">
